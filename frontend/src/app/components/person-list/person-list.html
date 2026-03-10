@@ -1,0 +1,71 @@
+<mat-drawer-container class="container">
+  <mat-drawer #drawer mode="over" position="end" class="sidenav">
+    <div class="form-container">
+      <h2>Neue Person</h2>
+      <form [formGroup]="personForm" (ngSubmit)="savePerson(); drawer.close()">
+        <mat-form-field appearance="fill"><mat-label>Vorname</mat-label><input matInput formControlName="name"></mat-form-field>
+        <mat-form-field appearance="fill"><mat-label>Nachname</mat-label><input matInput formControlName="lastname"></mat-form-field>
+        <mat-form-field appearance="fill"><mat-label>PLZ</mat-label><input matInput formControlName="zipcode"></mat-form-field>
+        <mat-form-field appearance="fill"><mat-label>Stadt</mat-label><input matInput formControlName="city"></mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Farbe wählen</mat-label>
+          <mat-select formControlName="color">
+            @for (c of availableColors; track c) {
+              <mat-option [value]="c">{{c}}</mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" type="submit" [disabled]="personForm.invalid">Speichern</button>
+      </form>
+    </div>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <div class="main-content">
+      <div class="toolbar">
+        <mat-form-field class="flex-field" appearance="outline">
+          <mat-label>Suche</mat-label>
+          <input matInput [ngModel]="searchTerm()" (ngModelChange)="onSearchChange($event)">
+          <mat-icon matSuffix>search</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field class="flex-field" appearance="outline">
+          <mat-label>Farbe filtern</mat-label>
+          <mat-select [value]="selectedColorFilter()" (selectionChange)="onColorFilterChange($event.value)">
+            <mat-option value="all">Alle Farben</mat-option>
+            @for (c of availableColors; track c) {
+              <mat-option [value]="c">{{c}}</mat-option>
+            }
+          </mat-select>
+        </mat-form-field>
+
+        <mat-form-field class="flex-field" appearance="outline">
+          <mat-label>Sortieren nach</mat-label>
+          <mat-select [value]="sortKey()" (selectionChange)="changeSort($event.value)">
+            <mat-option value="name">Vorname</mat-option>
+            <mat-option value="lastname">Nachname</mat-option>
+            <mat-option value="zipcode">PLZ</mat-option>
+            <mat-option value="city">Stadt</mat-option>
+            <mat-option value="color">Farbe</mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <button mat-mini-fab color="accent" (click)="changeSort(sortKey())">
+          <mat-icon>{{ sortDirection() === 'asc' ? 'arrow_upward' : 'arrow_downward' }}</mat-icon>
+        </button>
+
+        <button mat-fab color="primary" (click)="drawer.toggle()"><mat-icon>add</mat-icon></button>
+      </div>
+
+      <div class="person-grid">
+        @for (person of filteredPersons(); track person.id) {
+          <app-person-card [person]="person"></app-person-card>
+        } @empty {
+          <div class="no-results">Keine Ergebnisse.</div>
+        }
+      </div>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>

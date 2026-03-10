@@ -4,9 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c84741db-bfc7-4f63-84b9-522680199ce1" name="Changes" comment="fixed ci error by adding profile to test">
+    <list default="true" id="c84741db-bfc7-4f63-84b9-522680199ce1" name="Changes" comment="fixed tests">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/proxy.conf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/models/person.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/services/service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/interview/backend/repository/CsvPersonRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/interview/backend/repository/CsvPersonRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +32,8 @@
         <option value="Class" />
         <option value="JUnit5 Test Class" />
         <option value="GitHub Workflow" />
+        <option value="TypeScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -88,6 +101,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/abnae/Programmierung/Codes",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -99,7 +113,13 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel",
+    "ts.external.directory.path": "C:\\Users\\abnae\\Programmierung\\Codes\\assecor-assessment-fullstack\\frontend\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "h2"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -116,7 +136,7 @@
       <recent name="com.interview.backend.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CsvPersonRepositoryTest">
+  <component name="RunManager" selected="Spring Boot.BackendApplication">
     <configuration name="BackendApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.interview.backend.BackendApplication" />
       <module name="backend" />
@@ -189,7 +209,7 @@
       <option name="presentableId" value="Default" />
       <updated>1773154543906</updated>
       <workItem from="1773154544914" duration="2601000" />
-      <workItem from="1773157168486" duration="2167000" />
+      <workItem from="1773157168486" duration="10002000" />
     </task>
     <task id="LOCAL-00001" summary="set up spring, maven and angular">
       <option name="closed" value="true" />
@@ -215,7 +235,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773159344184</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fixed tests">
+      <option name="closed" value="true" />
+      <created>1773159810608</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1773159810608</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,6 +264,7 @@
     <MESSAGE value="set up spring, maven and angular" />
     <MESSAGE value="added backend code including test&#10;added config for cors&#10;added ci" />
     <MESSAGE value="fixed ci error by adding profile to test" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed ci error by adding profile to test" />
+    <MESSAGE value="fixed tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed tests" />
   </component>
 </project>

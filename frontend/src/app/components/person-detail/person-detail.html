@@ -1,0 +1,27 @@
+<div class="container" style="max-width: 600px; margin-top: 50px;">
+  @if (person(); as p) {
+    <mat-card>
+      <mat-card-header>
+        <div mat-card-avatar [style.backgroundColor]="p.color" style="border-radius: 50%; border: 1px solid #ccc;"></div>
+        <mat-card-title>{{ p.name }} {{ p.lastname }}</mat-card-title>
+        <mat-card-subtitle>ID: {{ p.id }}</mat-card-subtitle>
+      </mat-card-header>
+
+      <mat-card-content style="padding-top: 20px;">
+        <p><strong>Vorname:</strong> {{ p.name }}</p>
+        <p><strong>Nachname:</strong> {{ p.lastname }}</p>
+        <p><strong>Postleitzahl:</strong> {{ p.zipcode }}</p>
+        <p><strong>Stadt:</strong> {{ p.city }}</p>
+        <p><strong>Lieblingsfarbe:</strong> <span style="text-transform: capitalize;">{{ p.color }}</span></p>
+      </mat-card-content>
+
+      <mat-card-actions>
+        <button mat-stroked-button routerLink="/">
+          <mat-icon>arrow_back</mat-icon> ZURÜCK ZUR LISTE
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  } @else {
+    <p>Lade Personaldaten...</p>
+  }
+</div>
