@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c84741db-bfc7-4f63-84b9-522680199ce1" name="Changes" comment="set up spring, maven and angular">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/.github/workflows/maven.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/interview/backend/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/interview/backend/controller/PersonController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/interview/backend/model/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/interview/backend/model/PersonEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/interview/backend/repository/CsvPersonRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/interview/backend/repository/DbPersonRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/interview/backend/repository/JpaPersonRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/interview/backend/repository/PersonRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/interview/backend/service/PersonService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/interview/backend/util/ColorMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/test/java/com/interview/backend/controller/PersonControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/test/java/com/interview/backend/repository/CsvPersonRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/test/java/com/interview/backend/service/PersonServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/test/java/com/interview/backend/util/ColorMapperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c84741db-bfc7-4f63-84b9-522680199ce1" name="Changes" comment="added backend code including test&#10;added config for cors&#10;added ci" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -182,7 +162,7 @@
       <option name="presentableId" value="Default" />
       <updated>1773154543906</updated>
       <workItem from="1773154544914" duration="2601000" />
-      <workItem from="1773157168486" duration="999000" />
+      <workItem from="1773157168486" duration="1865000" />
     </task>
     <task id="LOCAL-00001" summary="set up spring, maven and angular">
       <option name="closed" value="true" />
@@ -192,7 +172,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773155169610</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added backend code including test&#10;added config for cors&#10;added ci">
+      <option name="closed" value="true" />
+      <created>1773158429401</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1773158429401</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +199,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="set up spring, maven and angular" />
-    <option name="LAST_COMMIT_MESSAGE" value="set up spring, maven and angular" />
+    <MESSAGE value="added backend code including test&#10;added config for cors&#10;added ci" />
+    <option name="LAST_COMMIT_MESSAGE" value="added backend code including test&#10;added config for cors&#10;added ci" />
   </component>
 </project>
