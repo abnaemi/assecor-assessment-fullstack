@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c84741db-bfc7-4f63-84b9-522680199ce1" name="Changes" comment="added frontend&#10;added sidenav to create new person&#10;added material ui" />
+    <list default="true" id="c84741db-bfc7-4f63-84b9-522680199ce1" name="Changes" comment="added frontend&#10;added sidenav to create new person&#10;added material ui">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,6 +70,7 @@
     &quot;JUnit.CsvPersonRepositoryTest.executor&quot;: &quot;Run&quot;,
     &quot;Maven.backend [compile].executor&quot;: &quot;Run&quot;,
     &quot;Maven.backend [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.backend [test].executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
@@ -122,7 +125,7 @@
       <recent name="com.interview.backend.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.BackendApplication">
+  <component name="RunManager" selected="npm.Angular CLI Server (frontend)">
     <configuration name="BackendApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.interview.backend.BackendApplication" />
       <module name="backend" />
@@ -196,6 +199,9 @@
       <updated>1773154543906</updated>
       <workItem from="1773154544914" duration="2601000" />
       <workItem from="1773157168486" duration="10145000" />
+      <workItem from="1773167735752" duration="617000" />
+      <workItem from="1773168454231" duration="55000" />
+      <workItem from="1773168654536" duration="318000" />
     </task>
     <task id="LOCAL-00001" summary="set up spring, maven and angular">
       <option name="closed" value="true" />
@@ -237,7 +243,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773167580147</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added frontend&#10;added sidenav to create new person&#10;added material ui">
+      <option name="closed" value="true" />
+      <created>1773167860954</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1773167860954</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

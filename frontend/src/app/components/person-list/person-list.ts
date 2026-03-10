@@ -75,7 +75,17 @@ export class PersonList implements OnInit {
 
   onColorFilterChange(color: string): void {
     this.selectedColorFilter.set(color);
-    this.applyFilterAndSort();
+    if (color === 'all') {
+      this.personService.getPersons().subscribe((data) => {
+        this.allPersons.set(data);
+        this.applyFilterAndSort();
+      });
+    } else {
+      this.personService.getPersonsByColor(color).subscribe((data) => {
+        this.allPersons.set(data);
+        this.applyFilterAndSort();
+      });
+    }
   }
 
   changeSort(key: any): void {
@@ -91,11 +101,6 @@ export class PersonList implements OnInit {
 
   applyFilterAndSort(): void {
     let result = this.allPersons();
-
-    if (this.selectedColorFilter() !== 'all') {
-      result = result.filter(p => p.color.toLowerCase() === this.selectedColorFilter().toLowerCase());
-    }
-
     const term = this.searchTerm().toLowerCase();
     if (term) {
       result = result.filter(p =>
@@ -113,7 +118,6 @@ export class PersonList implements OnInit {
 
     this.filteredPersons.set(result);
   }
-
   savePerson(): void {
     if (this.personForm.valid) {
       this.personService.createPerson(this.personForm.getRawValue() as Person).subscribe({
