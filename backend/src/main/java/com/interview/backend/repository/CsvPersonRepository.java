@@ -3,6 +3,7 @@ import com.interview.backend.model.Person;
 import com.interview.backend.util.ColorMapper;
 import jakarta.annotation.PostConstruct;
 import org.springframework.context.annotation.Profile;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Repository;
 
 import java.io.BufferedReader;
@@ -24,12 +25,12 @@ public class CsvPersonRepository implements PersonRepository {
     }
 
     private void loadData() {
-        try (BufferedReader br = new BufferedReader(new InputStreamReader(
-                getClass().getResourceAsStream("/sample-input.csv")))) {
+        try (BufferedReader br = new BufferedReader(
+                new InputStreamReader(new ClassPathResource("sample-input.csv").getInputStream()))) {
             String line;
             long idCounter = 1;
             while ((line = br.readLine()) != null) {
-                String[] parts = line.split(";");
+                String[] parts = line.split("[,;]");
                 if (parts.length >= 4) {
                     String[] location = parts[2].trim().split(" ", 2);
                     String zipCode = location[0];
